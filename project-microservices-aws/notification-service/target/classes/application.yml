@@ -1,0 +1,26 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: notification-service
+  datasource:
+    url: jdbc:h2:mem:notificationdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+aws:
+  region: us-west-2
+  sqs:
+    queue-url: https://sqs.us-west-2.amazonaws.com/037787046805/orders-created-queue
+logging:
+  level:
+    root: INFO
+    com.example.notificationservice: DEBUG

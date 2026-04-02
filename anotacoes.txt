@@ -1,0 +1,52 @@
+prática aws
+
+url:
+https://sqs.us-west-2.amazonaws.com/037787046805/orders-created-queue
+
+arn:
+arn:aws:sqs:us-west-2:037787046805:orders-created-queue
+
+região:
+us-west-2
+
+teste envio via site - sqs
+{"orderId":999,"customerName":"customer999","customerEmail":"customer999@example.com","product":"product999","quantity":999,"amount":7777.00,"status":"CREATED","createdAt":"2027-04-01T22:23:01.0275909"}
+
+
+EC2 (servidor)
+CloudWatch (logs)
+S3 (armazenamento)
+
+
+
+enviar para ec2
+scp -i order-service-ec2-key.pem order-api.jar ec2-user@34.221.42.230:/home/ec2-user/
+java -jar order-api.jar
+
+
+scp -i order-service-ec2-key.pem order-service.jar ec2-user@34.221.42.230:/home/ec2-user/
+java -jar order-service.jar
+
+scp -i order-service-ec2-key.pem notification-service.jar ec2-user@34.221.42.230:/home/ec2-user/
+java -jar notification-service.jar
+
+
+
+
+http://34.221.42.230:8080/orders
+
+---
+
+2. Conectar na máquina
+
+No terminal:
+
+chmod 400 order-service-ec2-key.pem
+
+ssh -i order-service-ec2-key.pem ec2-user@34.221.42.230
+
+---
+
+
+
+java -jar order-service.jar > app.log

@@ -1,0 +1,10 @@
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\domain\NotificationStatus.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\repository\NotificationRepository.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\service\NotificationService.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\messaging\SqsOrderConsumer.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\domain\NotificationEntity.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\dto\NotificationResponse.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\NotificationServiceApplication.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\config\AwsSqsConfig.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\messaging\OrderCreatedEvent.java
+C:\Programming\projects\aws-practice\project1-microservices-aws\notification-service\src\main\java\com\example\notificationservice\controller\NotificationController.java
